@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Товар - Магазин одежды</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+
     <div class="page-wrapper">
         <header class="header">
             <div class="container">
                 <nav class="menu">
                     <ul class="menu-list">
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="2.html" class="active">Каталог</a></li>
-                        <li><a href="3.html">Товар</a></li>
+                        <li><a href="2.html">Каталог</a></li>
+                        <li><a href="3.html" class="active">Товар</a></li>
                         <li><a href="4.html">Корзина</a></li>
                         <li><a href="5.html">Кабинет</a></li>
                     </ul>
@@ -22,14 +24,166 @@
                 <button class="burger" aria-label="Меню"><span></span></button>
             </div>
         </header>
+
         <main id="main-content">
-            <h1>Ещё не доделано</h1>
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <ul class="breadcrumbs-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="2.html">Каталог</a></li>
+                        <li><span aria-current="page">Футболка базовая</span></li>
+                    </ul>
+                </nav>
+
+                <div class="product-page">
+                    <div class="product-gallery">
+                        <img src="https://placehold.co/600x600" alt="Футболка базовая - основное фото" class="main-image" id="mainImage">
+                        <div class="thumbnail-grid">
+                            <img src="https://placehold.co/100x100" alt="Футболка вид спереди" class="thumbnail active" onclick="document.getElementById('mainImage').src=this.src">
+                            <img src="https://placehold.co/100x100" alt="Футболка вид сзади" class="thumbnail" onclick="document.getElementById('mainImage').src=this.src">
+                            <img src="https://placehold.co/100x100" alt="Футболка деталь" class="thumbnail" onclick="document.getElementById('mainImage').src=this.src">
+                            <img src="https://placehold.co/100x100" alt="Футболка на модели" class="thumbnail" onclick="document.getElementById('mainImage').src=this.src">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h1 class="product-page-title">Футболка базовая</h1>
+                        <div class="product-page-price">2 500 ₽</div>
+                        
+                        <div class="product-rating">
+                            ★★★★☆ (12 отзывов)
+                        </div>
+
+                        <div class="product-color-section">
+                            <h3 class="product-info-subtitle">Цвет: Черный</h3>
+                            <div class="color-selector">
+                                <label class="color-radio" style="--color: #000;">
+                                    <input type="radio" name="color" checked>
+                                    <span></span>
+                                </label>
+                                <label class="color-radio" style="--color: #fff;">
+                                    <input type="radio" name="color">
+                                    <span></span>
+                                </label>
+                                <label class="color-radio" style="--color: #f00;">
+                                    <input type="radio" name="color">
+                                    <span></span>
+                                </label>
+                                <label class="color-radio" style="--color: #00f;">
+                                    <input type="radio" name="color">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="product-size-section">
+                            <h3 class="product-info-subtitle">Выберите размер</h3>
+                            <div class="size-selector">
+                                <label class="size-radio">
+                                    <input type="radio" name="size">
+                                    <span>XS</span>
+                                </label>
+                                <label class="size-radio">
+                                    <input type="radio" name="size" checked>
+                                    <span>S</span>
+                                </label>
+                                <label class="size-radio">
+                                    <input type="radio" name="size">
+                                    <span>M</span>
+                                </label>
+                                <label class="size-radio">
+                                    <input type="radio" name="size">
+                                    <span>L</span>
+                                </label>
+                                <label class="size-radio">
+                                    <input type="radio" name="size">
+                                    <span>XL</span>
+                                </label>
+                            </div>
+                            <button class="size-table-button">Таблица размеров</button>
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn" aria-label="Уменьшить количество">-</button>
+                                <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                <button class="quantity-btn" aria-label="Увеличить количество">+</button>
+                            </div>
+                            <button class="add-to-cart large">Добавить в корзину</button>
+                        </div>
+
+                        <div class="product-description">
+                            <h3 class="product-info-subtitle">Описание</h3>
+                            <p>Базовая футболка из 100% хлопка. Идеально подходит для повседневной носки. Материал мягкий и приятный на ощупь.</p>
+                        </div>
+
+                        <div class="product-specs">
+                            <h3 class="product-info-subtitle">Характеристики</h3>
+                            <ul class="specs-list">
+                                <li>Состав: 100% хлопок</li>
+                                <li>Страна производства: Россия</li>
+                                <li>Уход: машинная стирка при 30°C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="reviews-section">
+                    <h2 class="section-title">Отзывы покупателей</h2>
+                    
+                    <div class="reviews-list">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Анна</span>
+                                <span class="review-rating">★★★★★</span>
+                                <span class="review-date">15 февраля 2024</span>
+                            </div>
+                            <p class="review-text">Отличная футболка! Качество ткани на высоте, размер подошел идеально.</p>
+                        </div>
+                        
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Михаил</span>
+                                <span class="review-rating">★★★★☆</span>
+                                <span class="review-date">10 февраля 2024</span>
+                            </div>
+                            <p class="review-text">Хорошая футболка за свои деньги. После стирки не села, цвет не изменился.</p>
+                        </div>
+                    </div>
+
+                    <form class="review-form">
+                        <h3 class="form-title">Оставить отзыв</h3>
+                        <textarea class="review-input" placeholder="Ваш отзыв" required></textarea>
+                        <div class="review-rating-select">
+                            <label class="radio-custom">
+                                <input type="radio" name="rating" required> ★
+                            </label>
+                            <label class="radio-custom">
+                                <input type="radio" name="rating"> ★★
+                            </label>
+                            <label class="radio-custom">
+                                <input type="radio" name="rating"> ★★★
+                            </label>
+                            <label class="radio-custom">
+                                <input type="radio" name="rating"> ★★★★
+                            </label>
+                            <label class="radio-custom">
+                                <input type="radio" name="rating"> ★★★★★
+                            </label>
+                        </div>
+                        <button type="submit" class="submit-review">Отправить</button>
+                    </form>
+                </section>
+            </div>
         </main>
+
         <footer class="footer">
             <div class="container">
                 <p>&copy; 2024 Магазин одежды</p>
             </div>
         </footer>
+
+        <a href="#" class="back-to-top" aria-label="Наверх">↑</a>
     </div>
 </body>
 </html>
