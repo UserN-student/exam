@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - STREETWEAR</title>
+    <link rel="stylesheet" href="styles.css">
+    <input type="radio" name="filter" id="filter-all" checked>
+    <input type="radio" name="filter" id="filter-new">
+    <input type="radio" name="filter" id="filter-sale">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">STREETWEAR</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li><a href="account.html">Кабинет</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Каталог</span>
+    </div>
+
+    <main class="container">
+        <h1 class="section-title anim-in">КАТАЛОГ ТОВАРОВ</h1>
+
+        <div class="shop-layout">
+            <aside class="sidebar anim-in">
+                <div class="filter-group">
+                    <span class="filter-title">КАТЕГОРИЯ</span>
+                    <label class="checkbox-label"><input type="checkbox"> Женское</label>
+                    <label class="checkbox-label"><input type="checkbox"> Мужское</label>
+                    <label class="checkbox-label"><input type="checkbox"> Обувь</label>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-title">РАЗМЕР</span>
+                    <label class="checkbox-label"><input type="checkbox"> XS</label>
+                    <label class="checkbox-label"><input type="checkbox"> S</label>
+                    <label class="checkbox-label"><input type="checkbox"> M</label>
+                    <label class="checkbox-label"><input type="checkbox"> L</label>
+                    <label class="checkbox-label"><input type="checkbox"> XL</label>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-title">ЦЕНА</span>
+                    <div class="price-range">
+                        <input type="number" class="price-input" placeholder="ОТ">
+                        <span>-</span>
+                        <input type="number" class="price-input" placeholder="ДО">
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%">ПРИМЕНИТЬ</button>
+            </aside>
+
+            <div class="products-grid">
+                <article class="product-card anim-in" data-category="new">
+                    <img src="img/8.jpg" alt="Футболка" class="product-img" loading="lazy">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-title">ФУТБОЛКА BASIC</h3>
+                            <span class="product-price">1 500 ₽</span>
+                        </div>
+                        <button class="btn-add-cart">В КОРЗИНУ</button>
+                    </div>
+                </article>
+                <article class="product-card anim-in anim-delay-1" data-category="sale">
+                    <img src="img/9.jpg" alt="Джинсы" class="product-img" loading="lazy">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-title">ДЖИНСЫ SLIM</h3>
+                            <span class="product-price">3 500 ₽</span>
+                        </div>
+                        <button class="btn-add-cart">В КОРЗИНУ</button>
+                    </div>
+                </article>
+                <article class="product-card anim-in anim-delay-2" data-category="new">
+                    <img src="img/10.jpg" alt="Куртка" class="product-img" loading="lazy">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-title">КУРТКА WINTER</h3>
+                            <span class="product-price">8 000 ₽</span>
+                        </div>
+                        <button class="btn-add-cart">В КОРЗИНУ</button>
+                    </div>
+                </article>
+                <article class="product-card anim-in anim-delay-3" data-category="sale">
+                    <img src="img/11.jpg" alt="Кроссовки" class="product-img" loading="lazy">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-title">КРОССОВКИ RUN</h3>
+                            <span class="product-price">5 000 ₽</span>
+                        </div>
+                        <button class="btn-add-cart">В КОРЗИНУ</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 STREETWEAR. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+    </footer>
+
+    <a href="#" class="scroll-top">↑</a>
+</body>
+</html>

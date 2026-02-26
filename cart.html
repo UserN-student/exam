@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - STREETWEAR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">STREETWEAR</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li><a href="account.html">Кабинет</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Корзина</span>
+    </div>
+
+    <main class="container">
+        <h1 class="section-title anim-in">КОРЗИНА ПОКУПОК</h1>
+
+        <table class="cart-table anim-in">
+            <thead>
+                <tr>
+                    <th>ТОВАР</th>
+                    <th>ЦЕНА</th>
+                    <th>КОЛИЧЕСТВО</th>
+                    <th>ИТОГО</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <img src="img/8.jpg" alt="Футболка" style="width:50px; height:50px; object-fit:cover; border:1px solid #000;" loading="lazy">
+                            <span>ФУТБОЛКА BASIC</span>
+                        </div>
+                    </td>
+                    <td>1 500 ₽</td>
+                    <td><input type="number" class="qty-input" value="1" min="1"></td>
+                    <td>1 500 ₽</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <img src="img/9.jpg" alt="Джинсы" style="width:50px; height:50px; object-fit:cover; border:1px solid #000;" loading="lazy">
+                            <span>ДЖИНСЫ SLIM</span>
+                        </div>
+                    </td>
+                    <td>3 500 ₽</td>
+                    <td><input type="number" class="qty-input" value="1" min="1"></td>
+                    <td>3 500 ₽</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-total anim-in">
+            ИТОГО: 5 000 ₽
+        </div>
+
+        <div style="text-align:right; margin-top:20px;" class="anim-in">
+            <a href="catalog.html" class="btn-primary">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+            <button class="btn-primary" style="background:#000; color:#fff; margin-left:10px;">ОФОРМИТЬ ЗАКАЗ</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 STREETWEAR. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+    </footer>
+
+    <a href="#" class="scroll-top">↑</a>
+</body>
+</html>
